@@ -696,6 +696,11 @@ export interface OpenapiHandler {
    * Allows to explicitly override the default operation (Query or Mutation) for any OAS operation
    */
   selectQueryOrMutationField?: SelectQueryOrMutationFieldConfig[];
+
+  /**
+   * Prevent OpenAPI-to-GraphQL from enforcing camelCase field names and PascalCase type names
+   */
+  simpleNames?: boolean;
 }
 export interface SelectQueryOrMutationFieldConfig {
   /**

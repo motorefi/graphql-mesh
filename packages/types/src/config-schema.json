@@ -1672,6 +1672,10 @@
           },
           "additionalItems": false,
           "description": "Allows to explicitly override the default operation (Query or Mutation) for any OAS operation"
+        },
+        "simpleNames": {
+          "type": "boolean",
+          "description": "Prevent OpenAPI-to-GraphQL from enforcing camelCase field names and PascalCase type names"
         }
       },
       "required": ["source"]

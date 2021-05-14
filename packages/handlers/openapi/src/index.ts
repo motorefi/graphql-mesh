@@ -134,6 +134,7 @@ export default class OpenAPIHandler implements MeshHandler {
       viewer: false,
       equivalentToMessages: true,
       pubsub: this.pubsub,
+      simpleNames: this.config.simpleNames,
       resolverMiddleware: (getResolverParams, originalFactory) => (root, args, context, info: any) => {
         const resolverData: ResolverData = { root, args, context, info };
         const resolverParams = getResolverParams();
